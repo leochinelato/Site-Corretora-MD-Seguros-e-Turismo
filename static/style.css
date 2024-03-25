@@ -1,0 +1,76 @@
+body {
+    background-color: #FCF6E8;
+    font-family: "Wix Madefor Text", sans-serif;
+}
+
+nav {
+    font-size: large;
+}
+
+.home-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.nav-btn {
+    background-color: #373737;
+    padding: 15px;
+    border: none;
+}
+
+.rounded {
+    object-fit: cover;
+}
+
+.partners {
+    background: #373737;
+    color: #FCF6E8;
+    height: 150px!important;
+}
+
+.normal-button::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #363138;
+    transition: width 0.3s;
+}
+.normal-button:hover::after {
+    width: 100%;
+}
+
+.brand-logo {
+    width: 100px;
+    transition: transform 300ms ease-out;
+}
+
+.brand-logo:hover {
+    transform: rotate(-3deg) translate(0px, -5px);
+}
+
+.home-text {
+    width: 60%;
+}
+
+.card img {
+    height: 170px;
+}
+
+.why-us {
+    background-color: #FDC448;
+}
+
+.md-imgs img {
+    height: 350px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 2px #363138;
+}
