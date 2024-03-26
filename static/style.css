@@ -73,4 +73,11 @@ nav {
     padding: 10px;
     border-radius: 20px;
     border: solid 2px #363138;
+    width: calc(25% - 1rem);
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
