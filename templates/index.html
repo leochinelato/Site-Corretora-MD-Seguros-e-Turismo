@@ -36,7 +36,7 @@
             <h1 class="home-title">
                 Seguro é Investimento em Tranquilidade
             </h1>
-            <p class="home-text">
+            <p class="home-text ps-1">
                 Escolha a corretora que conheça o que realmente importa para você.
             </p>
         </section>
@@ -51,7 +51,7 @@
         <img src="/static/img/porto-seguro-logo.svg" alt="" width="200px">
     </div>
     <div class="container mt-5 text-center font-weight-bold">
-        <h1>Nossos seguros</h1>
+        <h1 class="fw-bold">Nossos seguros</h1>
         <span>Oferecemos uma variedade de serviços de seguros para proteger o que é mais importante para você.</span>
         <div class="container d-flex flex-wrap justify-content-between align-items-center text-start gap-3 mt-5">
             <div class="card abrir-modal" data-bs-toggle="modal" data-bs-target="#myModal">
@@ -93,25 +93,33 @@
         </div>
     </div>
     <div class="container-fluid why-us">
-        <div class="container d-flex align-items-center justify-content-between mt-5 py-5 gap-2">
+        <div class="container d-flex align-items-center gap-5 mt-5 py-5">
             <section>
-                <div class="container">
-                    <h1>Sobre nós</h1>
+                <img src="/static/img/md-2.jpg" alt="Time da MD" width="500px" class="rounded">
+            </section>
+            <section class="teste">
+                <div class="text-white container title-why">
+                    <h1 class="fw-bold">Sobre nós</h1>
                 </div>
-                <div class="container">
-                    <h1>29+ Anos de experiência</h1>
-                    <p>
-                        No mercado desde 1995, Marcelo Duarte conta com uma equipe experiente e sempre disposta a
-                        atendê-lo. Sempre pensando na tranqüilidade e no melhor negócio para os seus clientes, a
-                        empresa
-                        é credenciada pelas maiores e mais tradicionais seguradoras do mercado.
-                    </p>
+                <div class="cards">
+                    <div class="container">
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="fw-bold mb-0">29+</h2>
+                            <span class="s-wt">Anos de Experiência</span>
+                        </div>
+                        <div class="text-why">
+                            <p>
+                                No mercado desde 1995, Marcelo Duarte conta com uma equipe experiente e sempre disposta a
+                                atendê-lo.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
-    <div class="container d-flex flex-row justify-content-between align-items-start mt-5 gap-5">
-        <div class="contacts d-flex flex-column gap-3 ">
+    <div class="container d-flex flex-row justify-content-between align-items-center mt-5 gap-5 py-5">
+        <div class="contacts d-flex flex-column gap-3">
             <div class="location">
                 <h1>
                     Onde nos encontrar?
@@ -131,13 +139,31 @@
                         <i class="bi bi-telephone"></i>
                         (13) 99711-0258
                     </span>
-                    <a class="nav-link link-dark fw-bold d-flex flex-column" href="">
-                        <span class="ps-2">
-                            <i class="bi bi-envelope"></i>
-                            Inserir e-mail
-                        </span>
-                    </a>
                 </a>
+                <a class="nav-link link-dark fw-bold d-flex flex-column" href="">
+                    <span class="ps-2">
+                        <i class="bi bi-envelope"></i>
+                        Inserir e-mail
+                    </span>
+                </a>
+            </div>
+            <div class="social">
+                <h2>Redes sociais:</h2>
+                <a class="nav-link link-dark fw-bold d-flex flex-column"
+                    href="https://www.instagram.com/mdseguroseturismo/" target="_blank" rel="noopener noreferrer">
+                    <span class="ps-2">
+                        <i class="bi bi-instagram"></i>
+                        mdseguroseturismo
+                    </span>
+                </a>
+                <a class="nav-link link-dark fw-bold d-flex flex-column"
+                    href="https://www.facebook.com/mdseguros.turismo/" target="_blank" rel="noopener noreferrer">
+                    <span class="ps-2">
+                        <i class="bi bi-facebook"></i>
+                        MD Seguros e Turismo
+                    </span>
+                </a>
+
             </div>
         </div>
         <div class="google-map">
@@ -149,9 +175,9 @@
     </div>
 
 
-
-
-
+    <a href="https://api.whatsapp.com/send?phone=13997110258" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <!-- Modal 1 -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
