@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <script src="/static/bootstrap.js"></script>
     <script src="/static/script.js"></script>
@@ -53,52 +54,40 @@
         <h1>Nossos seguros</h1>
         <span>Oferecemos uma variedade de serviços de seguros para proteger o que é mais importante para você.</span>
         <div class="container d-flex flex-wrap justify-content-between align-items-center text-start gap-3 mt-5">
-            <div class="card">
-                <img src="/static/img/seguro-auto.jpg" alt="Seguro Auto" class="card-img-top">
+            <div class="card abrir-modal" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="/static/img/pneu.png" alt="Seguro Auto" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Seguro Auto</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     </p>
-                    <button type="button" class="btn btn-warning abrir-modal" data-bs-toggle="modal"
-                        data-bs-target="#myModal">Cote
-                        já!</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="/static/img/seguro-residencial.jpg" alt="Seguro Residencial" class="card-img-top">
+            <div class="card abrir-modal" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="/static/img/casa.png" alt="Seguro Residencial" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Seguro Residencial</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     </p>
-                    <button type="button" class="btn btn-warning abrir-modal" data-bs-toggle="modal"
-                        data-bs-target="#myModal">Cote
-                        já!</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="/static/img/seguro-vida.jpg" alt="Seguro de Vida" class="card-img-top">
+            <div class="card abrir-modal" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="/static/img/familia.png" alt="Seguro de Vida" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Seguro de Vida</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     </p>
-                    <button type="button" class="btn btn-warning abrir-modal" data-bs-toggle="modal"
-                        data-bs-target="#myModal">Cote
-                        já!</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="/static/img/seguro-auto.jpg" alt="Seguro Auto" class="card-img-top">
+            <div class="card abrir-modal" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="/static/img/viagem.png" alt="Seguro Viagem" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Seguro Auto</h5>
+                    <h5 class="card-title">Seguro Viagem</h5>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     </p>
-                    <button type="button" class="btn btn-warning abrir-modal" data-bs-toggle="modal"
-                        data-bs-target="#myModal">Cote
-                        já!</button>
                 </div>
             </div>
         </div>
@@ -116,10 +105,46 @@
                         atendê-lo. Sempre pensando na tranqüilidade e no melhor negócio para os seus clientes, a
                         empresa
                         é credenciada pelas maiores e mais tradicionais seguradoras do mercado.
-
                     </p>
                 </div>
             </section>
+        </div>
+    </div>
+    <div class="container d-flex flex-row justify-content-between align-items-start mt-5 gap-5">
+        <div class="contacts d-flex flex-column gap-3 ">
+            <div class="location">
+                <h1>
+                    Onde nos encontrar?
+                </h1>
+                <span class="ps-2">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Av. Bernardino de Campos, 54<br>
+                </span>
+                <span class="ps-2">
+                    Vila Belmiro, Santos - SP
+                </span>
+            </div>
+            <div class="phones">
+                <h2>Contatos:</h2>
+                <a class="nav-link link-dark fw-bold d-flex flex-column" href="tel:13-997110258">
+                    <span class="ps-2">
+                        <i class="bi bi-telephone"></i>
+                        (13) 99711-0258
+                    </span>
+                    <a class="nav-link link-dark fw-bold d-flex flex-column" href="">
+                        <span class="ps-2">
+                            <i class="bi bi-envelope"></i>
+                            Inserir e-mail
+                        </span>
+                    </a>
+                </a>
+            </div>
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.298657716742!2d-46.339710323707436!3d-23.949876975982576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce036f169d7d6f%3A0x25356bcfaf48eca2!2sMarcelo%20Duarte%20-%20Corretora%20de%20Seguros%20e%20Turismo!5e0!3m2!1spt-BR!2sbr!4v1711489744855!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 

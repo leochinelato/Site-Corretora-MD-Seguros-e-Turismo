@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.querySelectorAll('.abrir-modal');
     buttons.forEach(function (button) {
         button.addEventListener('click', function () {
-            var cardTitle = this.parentNode.querySelector('.card-title').innerText;
+            var cardTitle = this.querySelector('.card-title').innerText;
             var modalTitle = document.querySelector('#myModal .modal-title');
             modalTitle.innerText = cardTitle;
         });
