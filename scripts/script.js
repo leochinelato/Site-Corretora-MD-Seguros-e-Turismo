@@ -9,11 +9,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
-document.getElementById('btnCopiar').addEventListener('click', function () {
-    var telefone = document.getElementById('telefone').textContent
-    navigator.clipboard.writeText(telefone)
-        .then(() => console.log('Texto copiado!'))
-        .catch(err => console.error('Falha ao copiar: ', err))
-})

@@ -122,23 +122,15 @@ nav {
     color: #fff;
 }
 
-.s-wt {
-    max-width: 70px;
-    line-height: 1;
-}
-
-.text-why {
-    max-width: 40%;
-    font-size: 14px;
-    line-height: 1;
-    margin-top: 10px;
-}
-
 .title-why {
     text-align: center;
 }
 
-#btnCopiar {
-    border: none;
-    background-color: inherit;
+.info-title {
+    max-width: 100px;
+    line-height: 1.2;
+}
+
+.info-text {
+    max-width: 450px;
 }
