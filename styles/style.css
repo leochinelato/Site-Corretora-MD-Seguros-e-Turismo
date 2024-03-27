@@ -137,3 +137,8 @@ nav {
 .title-why {
     text-align: center;
 }
+
+#btnCopiar {
+    border: none;
+    background-color: inherit;
+}
