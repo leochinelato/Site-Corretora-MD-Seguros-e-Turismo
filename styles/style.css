@@ -3,8 +3,10 @@ body {
     font-family: "Wix Madefor Text", sans-serif;
 }
 
-nav {
-    font-size: large;
+.nav-items {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: fit-content;
+    gap: 20em;
 }
 
 .home-title {
@@ -16,6 +18,19 @@ nav {
     background-color: #373737;
     padding: 15px;
     border: none;
+}
+
+.main-button {
+    transition: all 0.3s;
+}
+
+.main-button:hover {
+    color: #FFFFFF;
+    scale: 1.05;
+}
+
+.main-button:active {
+    scale: 0.95;
 }
 
 .rounded {
@@ -42,11 +57,15 @@ nav {
 
 .brand-logo {
     width: 100px;
-    transition: transform 300ms ease-out;
+    transition: all 300ms ease-out;
 }
 
 .brand-logo:hover {
     transform: rotate(-3deg) translate(0px, -5px);
+}
+
+.brand-logo:active {
+    scale: 1.05;
 }
 
 .home-text {
@@ -133,4 +152,26 @@ nav {
 
 .info-text {
     max-width: 450px;
+}
+
+.toggle-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px){
+    .toggle-btn {
+        display: block;
+    }
+    .nav-items {
+        width: 90%;
+        justify-content: space-between!important;
+        flex-wrap: nowrap;
+    }
+}
+@media(max-width:563px) {
+    .nav-items {
+        column-gap: 0;
+    }
 }
