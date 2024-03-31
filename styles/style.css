@@ -193,6 +193,7 @@ body {
     .nav-links{
         margin-top: -110%;
         transition: all 0.3s;
+        z-index: -1;
     }
     .nav-links.mobile-menu {
         margin-top: 0;
