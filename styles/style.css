@@ -171,7 +171,7 @@ p {
     padding-top: 50px;
 }
 
-@media(max-width:1026px){
+@media(max-width:1100px){
     body, html {
         width: 100vw!important;
         overflow-x: hidden!important;
