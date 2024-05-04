@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-blur no-padding">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="../assets/img/md-icon.PNG" alt="Logo da corretora MD" width="50">
             </a>
             <button class="navbar-toggler hambutton" type="button" data-bs-toggle="collapse"
@@ -43,20 +43,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active" aria-current="page">Ínicio</a>
+                        <a href="#" class="nav-link active" aria-current="page">Ínicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="seguros.html">
-                            Seguros
+                        <a class="nav-link" href="#seguros">
+                            Serviços
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="consorcios.html">
-                            Consórcios
+                        <a class="nav-link" href="#sobreNos">
+                            Sobre nós
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="turismo.html" class="nav-link">Turismo</a>
+                        <a class="nav-link" href="#contatos">
+                            Contatos
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +83,7 @@
         <div class="logos-title">
             <h5>As seguradoras com as <strong>melhores avaliações</strong> em um só lugar</h5>
         </div>
-        <div class="logos-logos">
+        <div class="logos-logos" id="seguros">
             <div class="logos-slide">
                 <div class="logo"> <img src="../assets/img/logos/allianz.png" alt=""> </div>
                 <div class="logo"> <img src="../assets/img/logos/porto.png" alt=""></div>
@@ -118,54 +120,18 @@
     <div class="container mt-5 text-center font-weight-bold">
         <h1 class="fw-bold">Nossos serviços</h1>
         <span>Oferecemos uma variedade de serviços e seguros para proteger o que é mais importante para você.</span>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('todos')">Todos</button>
+            <button class="button-value" onclick="filterProduct('seguros')">Seguros</button>
+            <button class="button-value" onclick="filterProduct('turismo')">Turismo</button>
+            <button class="button-value" onclick="filterProduct('consorcio')">Consorcio</button>
+        </div>
     </div>
     <div class="cards">
         <div class="cards-container">
-            <a class="card card-1 rounded-5 shadow-sm text-decoration-none" href="seguros.html">
-                <div class="card-img">
-                    <img src="../assets/img/family.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Seguros</h3>
-                    <p class="card-description">Projeta o que realmente importa com os nossos seguros personalizados.
-                        Desde o seu lar acolhedor até ao seu veículo de confiança. Garantimos a tranquilidade que você
-                        merece.</p>
-                </div>
-            </a>
-            <a class="card card-2 rounded-5 shadow-sm text-decoration-none" href="turismo.html">
-                <div class="card-img">
-                    <img src="../assets/img/trip.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Turismo</h3>
-                    <p class="card-description">Projeta o que realmente importa com os nossos seguros personalizados.
-                        Desde o seu lar acolhedor até ao seu veículo de confiança. Garantimos a tranquilidade que você
-                        merece.</p>
-                </div>
-            </a>
-            <a class="card card-3 rounded-5 shadow-sm text-decoration-none" href="consorcios.html">
-                <div class="card-img">
-                    <img src="../assets/img/consorcio.png" alt="">
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Consórcios</h3>
-                    <p class="card-description">Projeta o que realmente importa com os nossos seguros personalizados.
-                        Desde o seu lar acolhedor até ao seu veículo de confiança. Garantimos a tranquilidade que você
-                        merece.</p>
-                </div>
-            </a>
-            <a class="card card-4 rounded-5 shadow-sm text-decoration-none" href="#">
-                <div class="card-img"></div>
-                <div class="card-body">
-                    <h3 class="card-title">...</h3>
-                    <p class="card-description">Projeta o que realmente importa com os nossos seguros personalizados.
-                        Desde o seu lar acolhedor até ao seu veículo de confiança. Garantimos a tranquilidade que você
-                        merece.</p>
-                </div>
-            </a>
         </div>
     </div>
-    <div class="container-fluid why-us" id="why-us">
+    <div class="container-fluid why-us" id="sobreNos">
         <div class="container d-flex align-items-center gap-5 mt-5 py-5 justify-content-around whyus">
             <section>
                 <img src="../assets/img/md-2.jpg" alt="Time da MD" width="500px" class="rounded teamImage">
@@ -220,7 +186,7 @@
         </div>
     </div>
     <div class="container d-flex flex-row justify-content-between align-items-center mt-5 gap-5 py-5 infocontacts"
-        id="contacts">
+        id="contatos">
         <div class="contacts d-flex flex-column gap-3">
             <div class="location">
                 <h1>

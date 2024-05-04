@@ -30,7 +30,7 @@ nav {
 }
 
 .card:hover {
-    transform: translatey(-10px);
+    transform: translatey(-5px);
 }
 
 .logos-title h5 {
@@ -334,4 +334,30 @@ p {
 
 .hamburger-container .line {
     transition: transform 0.2s ease-in-out;
+}
+
+.card-secures {
+    margin-top: 7%;
+}
+
+#buttons {
+    margin-top: 15px;
+}
+
+.button-value {
+    background-color: transparent;
+    border: none;
+    border-radius: 3em;
+    padding: 0.6em 1.8em;
+    border: 2px solid #373737;
+    color: #373737;
+    cursor: pointer;
+}
+
+#buttons .active {
+    background-color: #373737;
+    color: #FFFFFF;
+}
+.hide {
+    display: none;
 }
