@@ -25,6 +25,25 @@ let services = {
             image: "../assets/img/consorcio.png",
             description: "Projeta o que realmente importa com os nossos seguros personalizados. Desde o seu lar acolhedor até ao seu veículo de confiança.Garantimos a tranquilidade que você merece."
         },
+        {
+            serviceName: "Seguro Residencial",
+            category: "seguros",
+            image: "",
+            description: "Proteja seu lar"
+        },
+        {
+            serviceName: "Seguro Auto",
+            category: "seguros",
+            image: "",
+            description: "Proteja seu carro"
+        },
+        {
+            serviceName: "Seguro Viagem",
+            category: "seguros",
+            image: "",
+            description: "Proteja sua viagem"
+        },
+        
 
     ]
 };
