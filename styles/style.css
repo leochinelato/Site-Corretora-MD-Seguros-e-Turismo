@@ -164,7 +164,7 @@ p {
 }
 
 .rest-page {
-    margin-top: 58px;
+    margin-top: 50px;
 }
 
 .home-content {
@@ -536,4 +536,13 @@ p {
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 4em;
+}
+
+.nav-item .active {
+    border-bottom: 1px solid #272727;
+    font-weight: 600;
+}
+
+nav {
+    padding-bottom: 0!important;
 }
