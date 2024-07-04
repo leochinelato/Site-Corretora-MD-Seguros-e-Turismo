@@ -252,12 +252,15 @@ p {
     .home-images {
         width: 50vw;
     }
+    .home-texts {
+        text-align: center!important;
+    }
 }
 @media(max-width: 425px) {
     .home-content {
         margin-bottom: 0!important;
         gap: 2em!important;
-        text-align: start;
+        text-align: center;
     }
     .hi1, .hi3{
         height: 400px;
