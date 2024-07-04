@@ -13,10 +13,6 @@ nav {
 
 }
 
-.container {
-
-}
-
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -522,4 +518,19 @@ p {
     flex-direction: column;
     justify-content: space-between;
     height: 14em;
+}
+
+.carousel-indicators button {
+    background-color: #272727!important;
+}
+
+.image-card {
+    filter: brightness(60%);
+}
+
+#cards-grid, #cards-grid-2 {
+    width: 80vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 4em;
 }
