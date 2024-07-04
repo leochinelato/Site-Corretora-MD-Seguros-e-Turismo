@@ -1,0 +1,11 @@
+['allianz',
+'porto',
+'azul',
+'bradesco',
+'hdi',
+'itau',
+'liberty',
+'mapfre',
+'mitsui',
+'suhai',
+'tokio']

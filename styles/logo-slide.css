@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     padding: 30px 0 30px 0;
 }
 
@@ -39,7 +38,7 @@ body {
 .logos-logos {
     overflow: hidden;
     padding: 60px 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-bottom: 1px solid #76767633;
     white-space: nowrap;
     position: relative;
     background-color: #ffffff;
