@@ -127,6 +127,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
     
     function generateCards(serviceList, cardsGrid) {
+
+        const phoneNumber = "+5513997110258"
+
         if (cardsGrid) {
             for (let i of serviceList) {
                 let card = document.createElement("div");
@@ -164,17 +167,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
             
                 let cardButton = document.createElement("button");
                 cardButton.classList.add("card-button");
+                cardButton.setAttribute("data-bs-toggle", "modal");
+                cardButton.setAttribute("data-bs-target", "#meuModal");
                 cardA.appendChild(cardButton)
                 cardButton.innerText = "Saiba Mais"
-            
+
+                cardButton.addEventListener("click", function() {
+                    document.getElementById("modalTitle").innerText = i.serviceName
+                    document.getElementById("modalDescription").innerText = i.description
+
+                    let whatsappMessage = `Olá, quero saber mais sobre o ${i.serviceName}`
+                    let whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`
+                    document.getElementById("whatsappButton").setAttribute("href", whatsappLink)
+
+                })
+
                 card.appendChild(imgContainer);
                 card.appendChild(cardBody);
             
                 cardsGrid.appendChild(card)
+
             
             }
         }
     }
+    
 
     let cardsGrid = document.getElementById("cards-grid")
     let cardsGrid2 = document.getElementById("cards-grid-2")
@@ -182,7 +199,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     generateCards(services.bens, cardsGrid)
     generateCards(services.pessoas, cardsGrid2)
         
-    
+
     
     
     const logos = [
@@ -214,4 +231,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
             logosSlide.appendChild(logoDiv);
         });
     });
+
 })
