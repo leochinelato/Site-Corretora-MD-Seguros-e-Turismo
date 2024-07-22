@@ -4,314 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site da corretora de seguros mais confiável de Santos-SP, MD Seguros e Turismo">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- MY CSS -->
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <link rel="stylesheet" type="text/css" href="../styles/logo-slide.css">
-
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/logo-slide.css">
+    <script defer src="./scripts/script.js"></script>
+    <script defer src="./scripts/script.js"></script>
     <title>MD Seguros e Turismo</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
-        defer></script>
-
-    <!-- MY JS -->
-    <script src="../scripts/script.js" defer></script>
-
-
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg fixed-top no-padding bg-blur">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="../assets/img/md-icon.PNG" alt="Logo da corretora MD" width="70">
-            </a>
-            <button class="navbar-toggler hambutton" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div class="hamburger-container">
-                    <div class="hamburger">
-                        <span class="line line-1"></span>
-                        <span class="line line-2"></span>
-                    </div>
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-head">
+            <button class="navbar-hide hambutton">
+                <div class="hamburger">
+                    <img src="./assets/images/e-remove.svg" alt="">
                 </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active" aria-current="page">Ínicio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="seguros.html">
-                            Seguro
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="turismo.html">
-                            Turismo
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Consórcio
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </nav>
-
-    <div class="rest-page">
-        <div class="container-fluid home-background pt-5 pb-5">
-            <div class="container home-content">
-                <section class="home-texts">
-                    <h1 class="home-title">
-                        Você seguro é nossa prioridade.
-                    </h1>
-                    <p class="home-text">
-                        MD Seguros e Turismo: proteção, economia e atendimento personalizado desde 1995.
-                    </p>
-                    <a href="#seguros">
-                        <button class="btn-cta">
-                            Conheça nossos serviços
-                        </button>
-                    </a>
-                </section>
-                <section class="d-flex align-items-center gap-1 home-images">
-                    <img class="rounded fp-imgs hi1" id="person-1" src="../assets/img/person-1.jpeg" alt="" width="200"
-                        height="450">
-                    <img class="rounded fp-imgs hi2" src="../assets/img/person-2.jpg" alt="" width="200" height="500">
-                    <img class="rounded fp-imgs hi3" src="../assets/img/person-3.jpg" alt="" width="200" height="450">
-                </section>
-            </div>
-        </div>
-        <div class="logos">
-            <div class="logos-title">
-                <h5>As seguradoras com as <strong>melhores avaliações</strong> em um só lugar</h5>
-            </div>
-            <div class="logos-logos" id="seguros">
-                <!-- Renderizado com javascript -->
-                <div class="logos-slide">
-                </div>
-                <!-- Renderizado com javascript -->
-                <div class="logos-slide">
-                </div>
-            </div>
-        </div>
-        <div class="container mt-1 text-center font-weight-bold" id="services">
-            <h1 class="fw-bold">Nossos serviços</h1>
-            <span>Oferecemos uma variedade de serviços para proteger o que é mais importante para você.</span>
-            <div class="cards">
-                <div class="service-card">
-                    <i class="icon-services bi bi-shield-fill"></i>
-                    <div class="card-texts">
-                        <h1>Seguros</h1>
-                        <div>Proteção completa e personalizada, com ampla cobertura e custo acessível.</div>
-                        <div class="card-cta">
-                            <a href="seguros.html">
-                                Saiba mais
-                                <i class="bi bi-arrow-right" style="font-size: 1rem;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="icon-services bi bi-airplane-fill"></i>
-                    <div class="card-texts">
-                        <h1>Turismo</h1>
-                        <div>Pacotes de viagem seguros e personalizados, para aproveitar cada momento com
-                            tranquilidade.</div>
-                        <div class="card-cta">
-                            <a href="turismo.html">
-                                Saiba mais
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <i class="icon-services bi bi-piggy-bank-fill"></i>
-                    <div class="card-texts">
-                        <h1>Consórcio</h1>
-                        <div>Consórcios flexíveis para realizar seus sonhos, com as melhores condições do
-                            mercado.</div>
-                        <div class="card-cta">
-                            <a href="consorcio.html">
-                                Saiba mais
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner container">
-                <div class="carousel-item active">
-                    <div class="item-car">
-                        <img src="./assets/img/md-1.png" class="d-block" alt="...">
-                        <div class="item-text">
-                            <h2>29 Anos de Experiência</h2>
-                            <div>Desde 1995, a MD Seguros e Turismo tem se dedicado a oferecer
-                                as melhores soluções em seguros e turismo. Nossa equipe experiente está sempre pronta
-                                para atendê-lo com um serviço personalizado, garantindo sua tranquilidade e satisfação.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="item-car">
-                        <img src="./assets/img/md-2.png" class="d-block" alt="...">
-                        <div class="item-text">
-                            <h2>Atendimento Personalizado.</h2>
-                            <div>A MD valoriza uma relação individual e respeitosa com seus clientes,
-                                proporcionando um atendimento personalizado que vai além do simples ato de vender
-                                seguros ou pacotes de turismo.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="item-car">
-                        <img src="./assets/img/md-3.png" class="d-block" alt="...">
-                        <div class="item-text">
-                            <h2>Cobertura Ampla e Menor Custo</h2>
-                            <div>A MD Seguros e Turismo oferece as melhores opções de seguros, com a maior cobertura e
-                                o menor custo, garantindo o melhor negócio para seus clientes.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <i class="bi bi-caret-left-fill"></i>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <i class="bi bi-caret-right-fill"></i>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- <div class="container whyus-wrapper">
-                <section>
-                    <img src="../assets/img/md-2.jpg" alt="Time da MD" width="500px" class="teamImage">
-                </section>
-                <section class="teste d-flex flex-column justify-content-center">
-                    <div class="container d-flex justify-content-center align-items-center flex-column gap-3">
-                        <div class="info">
-                            <div class="info-header">
-                                <h2>
-                                    29 Anos de experiência
-                                </h2>
-                            </div>
-                            <p class="info-text">
-                                Desde 1995, a MD Seguros e Turismo tem se dedicado a oferecer
-                                as melhores soluções em seguros e turismo. Nossa equipe experiente está sempre pronta
-                                para atendê-lo com um serviço personalizado, garantindo sua tranquilidade e satisfação.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div> -->
-        <div class="container d-flex flex-row justify-content-around align-items-center mt-5 gap-5 py-5 infocontacts"
-            id="contatos">
-            <div class="contacts d-flex flex-column gap-3">
-                <div class="location">
-                    <h1>
-                        Onde nos encontrar?
-                    </h1>
-                    <span class="ps-2">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        Av. Bernardino de Campos, 54<br>
-                    </span>
-                    <span class="ps-2">
-                        Vila Belmiro, Santos - SP
-                    </span>
-                </div>
-                <div class="phones">
-                    <h2>Contatos:</h2>
-                    <a class="nav-link link-dark d-flex flex-column" href="tel:13-997110258">
-                        <span class="ps-2">
-                            <i class="bi bi-telephone"></i>
-                            <span id="telefone-cp">(13) 99711-0258</span>
-                        </span>
-                    </a>
-                    <a class="nav-link link-dark d-flex flex-column" href="mailto:mdseguros@mdseguros.com.br">
-                        <span class="ps-2">
-                            <i class="bi bi-envelope"></i>
-                            mdseguros@mdseguros.com.br
-                        </span>
-                    </a>
-                </div>
-                <div class="social">
-                    <h2>Redes sociais:</h2>
-                    <a class="nav-link link-dark d-flex flex-column" href="https://www.instagram.com/mdseguroseturismo/"
-                        target="_blank" rel="noopener noreferrer">
-                        <span class="ps-2">
-                            <i class="bi bi-instagram"></i>
-                            mdseguroseturismo
-                        </span>
-                    </a>
-                    <a class="nav-link link-dark d-flex flex-column" href="https://www.facebook.com/mdseguros.turismo/"
-                        target="_blank" rel="noopener noreferrer">
-                        <span class="ps-2">
-                            <i class="bi bi-facebook"></i>
-                            MD Seguros e Turismo
-                        </span>
-                    </a>
-
-                </div>
-            </div>
-            <div class="google-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.298657716742!2d-46.339710323707436!3d-23.949876975982576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce036f169d7d6f%3A0x25356bcfaf48eca2!2sMarcelo%20Duarte%20-%20Corretora%20de%20Seguros%20e%20Turismo!5e0!3m2!1spt-BR!2sbr!4v1711489744855!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="mapGoogle"></iframe>
+        <div class="navbar-mobile-body">
+            <div class="navbar-links-mobile">
+                <a href="#">
+                    <div class="navbar-link-mobile">Ínicio</div>
+                </a>
+                <a href="#services">
+                    <div class="navbar-link-mobile">Serviços</div>
+                </a>
+                <a href="#about-us">
+                    <div class="navbar-link-mobile">Sobre nós</div>
+                </a>
             </div>
         </div>
     </div>
-
-    <a href="https://api.whatsapp.com/send?phone=13997110258" class="whatsapp-float" target="_blank">
-        <i class="bi bi-whatsapp"></i>
-    </a>
+    <nav class="container">
+        <img src="./assets/images/logo-md.svg" alt="logo md" class="logo-md">
 
 
+        <button class="navbar-show hambutton">
+            <div class="hamburger">
+                <img src="./assets/images/menu.svg" alt="">
+            </div>
+        </button>
 
+        <div class="navbar-links" id="navbarNavDropdown">
+            <a href="#">
+                <div class="navbar-link">Ínicio</div>
+            </a>
+            <a href="#services">
+                <div class="navbar-link">Serviços</div>
+            </a>
+            <a href="#about-us">
+                <div class="navbar-link">Sobre Nós</div>
+            </a>
+        </div>
+        <a href="#" class="navbar-button-a">
+            <button class="navbar-button">Faça sua cotação</button>
+        </a>
+
+    </nav>
+    <div id="hero" class="container hidden">
+        <div class="hero-texts">
+            <div class="hero-title">Você seguro é nossa <b>prioridade.</b></div>
+            <div class="hero-description">MD Seguros e Turismo: proteção, economia e atendimento personalizado desde
+                1995.</div>
+        </div>
+        <div class="hero-images">
+            <img src="./assets/images/person-1.png" class="img-person1" alt="Pessoa1" width="242">
+            <img src="./assets/images/person-2.png" class="img-person2" alt="Pessoa2" width="242">
+        </div>
+    </div>
+    <div id="logos" class="logos hidden">
+        <div class="logos-logos" id="seguros">
+            <!-- Renderizado com javascript -->
+            <div class="logos-slide">
+            </div>
+            <!-- Renderizado com javascript -->
+            <div class="logos-slide">
+            </div>
+        </div>
+    </div>
+    <div id="services" class="container hidden">
+        <h1 class="div-title">Nossos Serviços</h1>
+        <div class="services-container">
+            <a href="#">
+                <div class="services-card seguros-card">
+                    <h1>Seguros</h1>
+                    <p>Proteção completa e personalizada, com ampla cobertura e custo acessível.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="services-card turismo-card">
+                    <h1>Turismo</h1>
+                    <p>Pacotes de viagem seguros e personalizados, para aproveitar cada momento com tranquilidade.
+                    </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="services-card consorcio-card">
+                    <h1>Consórcio</h1>
+                    <p>Consórcios flexíveis para realizar seus sonhos, com as melhores condições do mercado.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="about-us" class="container hidden">
+        <h1 class="div-title">Sobre Nós</h1>
+        <div class="wrapper">
+            <ul class="carousel">
+                <li class="card about-card about-card-1 active">
+                    <h1>29 Anos de Experiência</h1>
+                    <p>Desde 1995, a MD Seguros e Turismo tem se dedicado a oferecer as melhores soluções em seguros e
+                        turismo.
+                        Nossa equipe experiente está sempre pronta para atendê-lo com um serviço personalizado,
+                        garantindo
+                        sua
+                        tranquilidade e satisfação.</p>
+                </li>
+                <li class="card about-card about-card-2">
+                    <h1>Atendimento Personalizado.</h1>
+                    <p>A MD valoriza uma relação individual e respeitosa com seus clientes, proporcionando um
+                        atendimento
+                        personalizado que vai além do simples ato de vender seguros ou pacotes de turismo.
+                    </p>
+                </li>
+                <li class="card about-card about-card-2">
+                    <h1>Cobertura Ampla e Menor Custo</h1>
+                    <p>A MD Seguros e Turismo oferece as melhores opções de seguros, com a maior cobertura e o menor
+                        custo,
+                        garantindo o melhor negócio para seus clientes.</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="arrows">
+            <div class="arrow prev-arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32">
+                    <title>left-arrow</title>
+                    <g fill="#212121">
+                        <path
+                            d="M22.293,31.707a1,1,0,0,0,1.414,0l1-1a1,1,0,0,0,0-1.414L11.414,16,24.707,2.707a1,1,0,0,0,0-1.414l-1-1a1,1,0,0,0-1.414,0l-15,15a1,1,0,0,0,0,1.414Z"
+                            fill="#212121"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 32 32">
+                    <title>right-arrow</title>
+                    <g fill="#212121">
+                        <path
+                            d="M7.293,30.707l1,1a1,1,0,0,0,1.414,0l15-15a1,1,0,0,0,0-1.414l-15-15a1,1,0,0,0-1.414,0l-1,1a1,1,0,0,0,0,1.414L20.586,16,7.293,29.293A1,1,0,0,0,7.293,30.707Z"
+                            fill="#212121"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col1">
+                <img src="./assets/images/logo-md.svg" alt="logo-md" width="165px">
+                <div class="address">
+                    <img src="./assets/images/map-pin.svg" alt="map-pin" class="map-pin">
+                    <p>Av. Bernardino de Campos, 54
+                        Vila Belmiro, Santos - SP</p>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <div class="social-logos">
+                    <a href="#">
+                        <img src="./assets/images/fb-logo.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/ig-logo.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/email-logo.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/phone-logo.svg" alt="facebook">
+                    </a>
+                </div>
+                <p class="div-title">©️MD Seguros e Turismo | 2024</p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
