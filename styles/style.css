@@ -1,6 +1,36 @@
 @font-face {
     font-family: 'SF Pro';
     src: url('../fonts/SF-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SF-Pro-Display-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url("../fonts/SF-Pro-Display-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SF-Pro-Display-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SF-Pro-Display-Heavy.otf');
+    font-weight: 1000;
+    font-style: normal;
 }
 
 * {
@@ -12,6 +42,10 @@
 
 html { 
     scroll-behavior: smooth
+}
+
+.heavy-font {
+    font-weight: 1000;
 }
 
 a {
@@ -107,7 +141,7 @@ nav {
     border-radius: 1rem;
     padding: 1.2rem;
     cursor: pointer;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 1rem;
     border: none;
     background-color: #FFC700;
@@ -130,7 +164,7 @@ nav {
 
 .hero-title {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .hero-description {
@@ -181,7 +215,7 @@ nav {
 }
 
 .services-card h1 {
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .services-card h1, .services-card p {
@@ -385,7 +419,7 @@ footer {
         width: 100vw;
         height: 100vh;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: bold;
 
         display: flex;
 

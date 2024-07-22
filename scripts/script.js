@@ -79,8 +79,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 entry.target.classList.remove("show")
             }
         })
-    }, {
-        threshold: 0.1
     })
 
 
