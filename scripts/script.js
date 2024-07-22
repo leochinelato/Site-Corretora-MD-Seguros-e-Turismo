@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             const logoDiv = document.createElement('div');
             logoDiv.classList.add('logo');
             const logoImg = document.createElement('img');
-            logoImg.src = `./assets/images/logos/${logo}`;
+            logoImg.src = `../assets/images/logos/${logo}`;
             logoImg.alt = '';
 
             logoDiv.appendChild(logoImg);
@@ -52,6 +52,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let currentItem = 0
     const items = document.querySelectorAll(".about-card")
     const maxItems = items.length
+    const container = document.getElementById("about-us")
+
+    
+    const scrollToItem = (index) => {
+        items.forEach(item => item.classList.remove("active"))
+
+        items[currentItem].scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+            block: "nearest"
+        })
+
+        items[currentItem].classList.add("active")
+        
+    }
+
+
+
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show")
+            } else {
+                entry.target.classList.remove("show")
+            }
+        })
+    }, {
+        threshold: 0.1
+    })
+
 
     controls.forEach(control => {
         control.addEventListener('click', () => {
@@ -70,25 +101,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 currentItem = maxItems - 1
             }
 
-            items.forEach(item => item.classList.remove("active"))
+            scrollToItem(currentItem)
 
-            items[currentItem].scrollIntoView({
-                inline: "center",
-                behavior: "smooth",
-                block: "nearest"
-            })
-
-            items[currentItem].classList.add("active")
-        })
-    })
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show")
-            } else {
-                entry.target.classList.remove("show")
-            }
         })
     })
     
