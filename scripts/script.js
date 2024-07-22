@@ -68,9 +68,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         
     }
 
-
-
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
