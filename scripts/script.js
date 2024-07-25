@@ -48,25 +48,62 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
 
-    const controls = document.querySelectorAll(".arrow")
-    let currentItem = 0
-    const items = document.querySelectorAll(".about-card")
-    const maxItems = items.length
-    const container = document.getElementById("about-us")
 
+    function setupCarousel(containerSelector, itemSelector, arrowSelector) {
+        const container = document.querySelector(containerSelector)
+        if (!container) return
+
+        const items = container.querySelectorAll(itemSelector)
+        if (items.length === 0) return
+
+        const controls = document.querySelectorAll(arrowSelector)
+        if (controls.length === 0) return
+
+        let currentItem = 0
+        const maxItems = items.length
+
+        const scrollToItem = (index) => {
+            items.forEach(item => item.classList.remove("active"))
     
-    const scrollToItem = (index) => {
-        items.forEach(item => item.classList.remove("active"))
+            items[index].scrollIntoView({
+                inline: "center",
+                behavior: "smooth",
+                block: "nearest"
+            })
+    
+            items[index].classList.add("active")
+            
+        }
 
-        items[currentItem].scrollIntoView({
-            inline: "center",
-            behavior: "smooth",
-            block: "nearest"
+        controls.forEach(control => {
+            control.addEventListener('click', () => {
+                const isLeft = control.classList.contains("prev-arrow")
+                if (isLeft) {
+                    currentItem -= 1
+                } else {
+                    currentItem += 1
+                }
+    
+                if (currentItem >= maxItems) {
+                    currentItem = 0
+                }
+    
+                if (currentItem < 0) {
+                    currentItem = maxItems - 1
+                }
+    
+                scrollToItem(currentItem)
+    
+            })
         })
-
-        items[currentItem].classList.add("active")
-        
     }
+
+    setupCarousel("#about-us", ".about-card", ".arrow")
+    setupCarousel(".cards-grid-container", ".card-element", ".seguro-arrow")
+    setupCarousel(".cards-grid-container2", ".card-element2", ".seguro-arrow2")
+    
+
+
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry) => {
@@ -75,29 +112,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             } else {
                 entry.target.classList.remove("show")
             }
-        })
-    })
-
-
-    controls.forEach(control => {
-        control.addEventListener('click', () => {
-            const isLeft = control.classList.contains("prev-arrow")
-            if (isLeft) {
-                currentItem -= 1
-            } else {
-                currentItem += 1
-            }
-
-            if (currentItem >= maxItems) {
-                currentItem = 0
-            }
-
-            if (currentItem < 0) {
-                currentItem = maxItems - 1
-            }
-
-            scrollToItem(currentItem)
-
         })
     })
     
@@ -221,14 +235,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ]
     };
 
-    function generateCards(serviceList, cardsGrid) {
+    function generateCards(serviceList, cardsGrid, cardElement) {
 
         const phoneNumber = "+5513997110258"
 
         if (cardsGrid) {
             for (let i of serviceList) {
                 let card = document.createElement("div");
-                card.classList.add("card-element");
+                card.classList.add(cardElement);
             
                 let imgContainer = document.createElement("div");
                 imgContainer.classList.add("card-header");
@@ -291,8 +305,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let cardsGrid = document.getElementById("cards-grid")
     let cardsGrid2 = document.getElementById("cards-grid-2")
 
-    generateCards(services.bens, cardsGrid)
-    generateCards(services.pessoas, cardsGrid2)
+    generateCards(services.bens, cardsGrid, "card-element2")
+    generateCards(services.pessoas, cardsGrid2, "card-element")
 
 
 })
