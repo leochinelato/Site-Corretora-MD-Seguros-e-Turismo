@@ -96,14 +96,56 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
             })
         })
+
+        let startX, startY, endX, endY
+
+        const handleTouchStart = (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        };
+    
+        const handleTouchMove = (e) => {
+            endX = e.touches[0].clientX;
+            endY = e.touches[0].clientY;
+        };
+    
+        const handleTouchEnd = () => {
+            const diffX = endX - startX;
+            const diffY = endY - startY;
+    
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                // Horizontal swipe detected
+                if (diffX > 0) {
+                    // Swipe right
+                    currentItem -= 1;
+                    if (currentItem < 0) {
+                        currentItem = maxItems - 1;
+                    }
+                } else {
+                    // Swipe left
+                    currentItem += 1;
+                    if (currentItem >= maxItems) {
+                        currentItem = 0;
+                    }
+                }
+    
+                scrollToItem(currentItem);
+            }
+    
+            // Reset variables
+            startX = null;
+            startY = null;
+            endX = null;
+            endY = null;
+
+        };
+
+        container.addEventListener('touchstart', handleTouchStart);
+        container.addEventListener('touchmove', handleTouchMove);
+        container.addEventListener('touchend', handleTouchEnd);
     }
 
     setupCarousel("#about-us", ".about-card", ".arrow")
-    setupCarousel(".cards-grid-container", ".card-element", ".seguro-arrow")
-    setupCarousel(".cards-grid-container2", ".card-element2", ".seguro-arrow2")
-    
-
-
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry) => {
@@ -239,10 +281,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         const phoneNumber = "+5513997110258"
 
+        cardsGrid.innerHTML = ""
+
         if (cardsGrid) {
-            for (let i of serviceList) {
+            serviceList.forEach((i, index) => {
                 let card = document.createElement("div");
                 card.classList.add(cardElement);
+
+                if (index === 0) {
+                    card.classList.add("active")
+                }
             
                 let imgContainer = document.createElement("div");
                 imgContainer.classList.add("card-header");
@@ -260,6 +308,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 cardBody.appendChild(cardTextContainer)
             
                 let cardTitle = document.createElement("h3");
+                cardTitle.style.fontWeight = "bold";
                 cardTextContainer.appendChild(cardTitle);
                 cardTitle.innerText = i.serviceName;
             
@@ -297,7 +346,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 cardsGrid.appendChild(card)
 
             
-            }
+            })
         }
     }
     
@@ -308,5 +357,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     generateCards(services.bens, cardsGrid, "card-element2")
     generateCards(services.pessoas, cardsGrid2, "card-element")
 
+
+   
 
 })

@@ -54,7 +54,7 @@ a {
 }
 
 body {
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro', sans-serif!important;
     background-image: linear-gradient(
         135deg,
         hsl(47deg 100% 50%) 0%,
@@ -386,7 +386,6 @@ footer {
     align-items: end;
 }
 
-/* Scroll animations :) */
 .hidden {
     opacity: 0;
     transition: all 500ms ease-in-out; 
@@ -402,14 +401,6 @@ footer {
     opacity: 1;
 }
 
-.cards-grid {
-    display: flex;
-    gap: 1rem;
-    overflow-x: scroll;
-    margin-top: 2rem;
-    width: calc(100% + 400px);
-}
-
 .card-element, .card-element2 {
     width: 18rem;
     display: flex;
@@ -420,6 +411,7 @@ footer {
     margin-bottom: 2rem;
     scroll-snap-align: start;
     flex-shrink: 0;
+    margin: 0 10px;
 }
 
 .card-body {
@@ -483,13 +475,9 @@ footer {
         height: 100vh;
         font-size: 2rem;
         font-weight: bold;
-
         display: flex;
-
         top: -900px;
-
         transition: all 300ms;
-
         z-index: 999;
     }
 
@@ -510,7 +498,6 @@ footer {
     }
 
     .navbar-mobile-body {
-        /* background-color: blue; */
         width: 100%;
         position: absolute;
         display: flex;
@@ -592,10 +579,6 @@ footer {
         background-size: cover;
     }
 
-    .arrows {
-        height: 40px;
-    }
-
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -611,8 +594,8 @@ footer {
         display: flex;
         align-items: center;
     }
-    .arrow-left, .arrow-right {
-        padding-right: 1rem;
+    .arrows {
+        display: none;
     }
    
     
@@ -648,11 +631,6 @@ footer {
 
 .seguros {
     margin-top: 3rem;
-}
-
-.cards-grid-container, .cards-grid-container2 {
-    display: flex;
-    align-items: center;
 }
 
 .arrow-left, .arrow-right {
