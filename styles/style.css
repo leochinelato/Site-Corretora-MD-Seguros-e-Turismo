@@ -177,7 +177,7 @@ nav {
     border-radius: 1.25rem;
 }
 
-#services {
+#services, #services2 {
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -284,18 +284,18 @@ nav {
     font-size: 0.75rem;
 }
 
-.wrapper, .cards-grid {
+.wrapper, .service-container {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     overscroll-behavior: contain;
 }
 
-.carousel {
+.carousel, .cards-grid {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.wrapper::-webkit-scrollbar, .cards-grid::-webkit-scrollbar {
+.wrapper::-webkit-scrollbar, .service-container::-webkit-scrollbar {
     display: none;
     width: 0;
     height: 0;
@@ -594,8 +594,8 @@ footer {
         display: flex;
         align-items: center;
     }
-    .arrows {
-        display: none;
+    .arrows, .service-arrows {
+        display: none!important;
     }
    
     
@@ -635,4 +635,23 @@ footer {
 
 .arrow-left, .arrow-right {
     cursor: pointer;
+}
+
+.service-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.seguros-items {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.service-arrows {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

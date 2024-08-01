@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     setupCarousel("#about-us", ".about-card", ".arrow")
+    
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry) => {
@@ -357,7 +358,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     generateCards(services.bens, cardsGrid, "card-element2")
     generateCards(services.pessoas, cardsGrid2, "card-element")
 
-
+    setupCarousel("#services", ".card-element", ".arrow")
+    setupCarousel("#services2", ".card-element2", ".arrow")
    
 
 })
