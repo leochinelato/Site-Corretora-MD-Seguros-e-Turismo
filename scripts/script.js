@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     generateCards(services.pessoas, cardsGrid2, "card-element")
 
     setupCarousel("#services", ".card-element", ".arrow")
-    setupCarousel("#services2", ".card-element2", ".arrow")
+    setupCarousel("#services2", ".card-element2", ".arrow2")
    
 
 })

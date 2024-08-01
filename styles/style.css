@@ -303,7 +303,7 @@ nav {
 
 
 
-.arrow {
+.arrow, .arrow2 {
     height: 30px;
     width: 30px;
     background-color: #ffffff;
@@ -317,7 +317,7 @@ nav {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.arrow svg {
+.arrow svg, .arrow2 svg {
     width: 1rem;
 }
 
