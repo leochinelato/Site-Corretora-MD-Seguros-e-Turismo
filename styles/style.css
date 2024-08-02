@@ -451,7 +451,7 @@ footer {
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 416px) {
     *:not(.logo, .logos, .logos-slide) {
         max-width: 100vw!important;
         overflow-x: hidden!important;
@@ -596,6 +596,13 @@ footer {
     }
     .arrows, .service-arrows {
         display: none!important;
+    }
+
+    
+    .wrapper, .service-container {
+        overflow-x: auto;
+        scroll-snap-type: none;
+        overscroll-behavior: none;
     }
    
     
